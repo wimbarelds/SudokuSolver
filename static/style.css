@@ -1,0 +1,45 @@
+/* 
+    Document   : style
+    Created on : Jun 2, 2012, 12:16:07 PM
+    Author     : Wim
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+td {
+	min-width: 15px;
+	border: solid #000 1px;
+	text-align: center;
+	font-family: sans-serif;
+	position: relative;
+}
+td.big {
+	background-color: #999;
+}
+td.small {
+	background-color: #FFF;
+	cursor: pointer;
+}
+td.changed {
+	background-color: #9AB;
+}
+td.small:hover {
+	background-color: #BCD;
+}
+.hover {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: fit-content;
+	border: solid #666 1px;
+	background-color: #333;
+	color: #DEF;
+	white-space: nowrap;
+	z-index: 100;
+	padding: 1px 3px;
+	font-size: 75%;
+}
+td:hover > .hover {
+	display: block;
+}
